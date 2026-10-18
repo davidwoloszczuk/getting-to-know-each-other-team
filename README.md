@@ -1,4 +1,4 @@
-# health-insurance-calc-html
+# getting-to-know-each-other-team-website
 
 Our scrum team's portfolio site: a team photo (image map), a member list linking to each
 member's Getting To Know Each Other site, and an assignment portfolio. It is plain HTML, CSS,
