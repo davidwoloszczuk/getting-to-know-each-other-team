@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Team Portfolio</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<header class="site-header">
+		<p class="eyebrow">Software Engineering · Scrum Team</p>
+		<h1>Meet the Team</h1>
+		<p class="lede">Click a teammate in the photo, or pick a name below, to open their
+			Getting To Know Each Other page.</p>
+	</header>
+
+	<main>
+		<section class="photo-section" aria-label="Team photo">
+			<figure class="team-photo">
+				<!-- Area coordinates use the photo's natural size (1200 × 900); js/main.js rescales them. -->
+				<img id="teamPhoto" src="img/team-photo.jpg" width="1200" height="900" usemap="#teamMap"
+					alt="Our scrum team at a table: Andres, David, Ian, and Abdul, left to right">
+				<figcaption>Left to right: Andres, David, Ian, Abdul</figcaption>
+			</figure>
+			<map name="teamMap">
+				<!-- BEGIN Andres: image map -->
+				<area shape="rect" coords="130,335,370,700" href="https://aebodi.github.io/getting-to-know-each-other/"
+					target="_blank" rel="noopener" alt="Andres Bodington" title="Andres Bodington" data-member="andres">
+				<!-- END Andres: image map -->
+				<!-- BEGIN David: image map -->
+				<area shape="rect" coords="370,345,505,530" href="#TODO-david-url" target="_blank" rel="noopener"
+					alt="David Woloszczuk" title="David Woloszczuk" data-member="david">
+				<!-- END David: image map -->
+				<!-- BEGIN Ian: image map -->
+				<area shape="rect" coords="695,330,880,560" href="#TODO-ian-url" target="_blank" rel="noopener"
+					alt="Ian Jung" title="Ian Jung" data-member="ian">
+				<!-- END Ian: image map -->
+				<!-- BEGIN Abdul: image map -->
+				<area shape="rect" coords="815,450,1190,900" href="#TODO-abdul-url" target="_blank" rel="noopener"
+					alt="Abdul Rahman" title="Abdul Rahman" data-member="abdul">
+				<!-- END Abdul: image map -->
+			</map>
+		</section>
+
+		<section class="members" aria-labelledby="membersHeading">
+			<h2 id="membersHeading">Team Members</h2>
+			<ul class="card-grid">
+				<!-- BEGIN Andres: member info -->
+				<li class="card member" data-member="andres">
+					<a href="https://aebodi.github.io/getting-to-know-each-other/" target="_blank" rel="noopener">
+						<span class="member-name">Andres Bodington</span>
+						<span class="member-role">Scrum Master</span>
+						<span class="member-link">Getting To Know Me →</span>
+					</a>
+				</li>
+				<!-- END Andres: member info -->
+				<!-- BEGIN David: member info -->
+				<li class="card member" data-member="david">
+					<a href="#TODO-david-url" target="_blank" rel="noopener">
+						<span class="member-name">David Woloszczuk</span>
+						<span class="member-role">Developer</span>
+						<span class="member-link">Getting To Know Me →</span>
+					</a>
+				</li>
+				<!-- END David: member info -->
+				<!-- BEGIN Ian: member info -->
+				<li class="card member" data-member="ian">
+					<a href="#TODO-ian-url" target="_blank" rel="noopener">
+						<span class="member-name">Ian Jung</span>
+						<span class="member-role">Product Owner</span>
+						<span class="member-link">Getting To Know Me →</span>
+					</a>
+				</li>
+				<!-- END Ian: member info -->
+				<!-- BEGIN Abdul: member info -->
+				<li class="card member" data-member="abdul">
+					<a href="#TODO-abdul-url" target="_blank" rel="noopener">
+						<span class="member-name">Abdul Rahman</span>
+						<span class="member-role">Developer</span>
+						<span class="member-link">Getting To Know Me →</span>
+					</a>
+				</li>
+				<!-- END Abdul: member info -->
+			</ul>
+		</section>
+
+		<section class="portfolio" aria-labelledby="portfolioHeading">
+			<h2 id="portfolioHeading">Assignment Portfolio</h2>
+			<ul class="card-grid">
+				<li class="card project">
+					<span class="tag">Sprint 4</span>
+					<h3>Health Insurance Risk Calculator</h3>
+					<p>Client form plus a Node.js API that scores health insurance risk on the
+						server.</p>
+					<p class="project-links">
+						<a href="https://github.com/aebodi/health-insurance-risk-calculator-1">Client repo</a>
+						<a href="https://github.com/IanJ321/health-insurance-calc-node">Server repo</a>
+					</p>
+				</li>
+				<li class="card project placeholder">
+					<span class="tag">Coming soon</span>
+					<h3>Next Assignment</h3>
+					<p>Future team assignments will be added here.</p>
+				</li>
+			</ul>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<p>Hosted on Azure Static Web Apps · Source on
+			<a href="https://github.com/IanJ321/health-insurance-calc-html">GitHub</a>
+		</p>
+	</footer>
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>
